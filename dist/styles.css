@@ -504,7 +504,7 @@ h3 {
 .book-card {
   overflow: hidden;
   display: grid;
-  grid-template-rows: 520px auto;
+  grid-template-rows: auto auto;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--paper);
@@ -512,11 +512,12 @@ h3 {
 }
 
 .book-card img {
-  object-position: center top;
-}
-
-.book-card-alt img {
-  object-position: center 18%;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  object-position: center center;
+  background: #efe5d6;
 }
 
 .book-copy {
@@ -857,7 +858,7 @@ h3 {
   }
 
   .book-card {
-    grid-template-rows: 440px auto;
+    grid-template-rows: auto auto;
   }
 
   .gallery-track {
@@ -929,7 +930,7 @@ h3 {
   }
 
   .book-card {
-    grid-template-rows: 360px auto;
+    grid-template-rows: auto auto;
   }
 
   .book-copy {
