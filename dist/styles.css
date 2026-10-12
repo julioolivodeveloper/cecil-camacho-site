@@ -477,7 +477,7 @@ h3 {
 .feature-image {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 16 / 9;
   margin: 0;
   border-radius: 8px;
   box-shadow: var(--shadow);
