@@ -172,8 +172,8 @@ button {
 }
 
 .hero-media {
-  background-image: url("assets/cecil-selfie-book.jpg");
-  background-position: center 38%;
+  background-image: url("assets/retrato-biblioteca-calida.png");
+  background-position: center center;
   background-size: cover;
   transform: scale(1.04);
 }
@@ -893,7 +893,7 @@ h3 {
   }
 
   .hero-media {
-    background-position: 52% center;
+    background-position: 54% center;
   }
 
   .hero-lede {
