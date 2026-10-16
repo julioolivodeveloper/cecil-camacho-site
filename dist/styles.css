@@ -442,6 +442,49 @@ h3 {
   transform: translateY(-2px);
 }
 
+.course-video-block {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(260px, 0.48fr) minmax(0, 1fr);
+  gap: 54px;
+  align-items: center;
+  margin-top: 88px;
+  padding-top: 72px;
+  border-top: 1px solid var(--line);
+}
+
+.course-video-copy h3 {
+  margin-bottom: 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  line-height: 1.08;
+}
+
+.course-video-copy p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.course-video-frame {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--ink);
+  box-shadow: var(--shadow);
+}
+
+.course-video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .section {
   padding: 96px 32px;
 }
@@ -864,6 +907,27 @@ h3 {
   font-weight: 900;
 }
 
+.chat-button-icon {
+  position: relative;
+  display: inline-block;
+  width: 19px;
+  height: 15px;
+  margin-right: 9px;
+  border: 2px solid currentColor;
+  border-radius: 5px;
+}
+
+.chat-button-icon::after {
+  position: absolute;
+  left: 2px;
+  bottom: -5px;
+  width: 6px;
+  height: 6px;
+  content: "";
+  border-left: 2px solid currentColor;
+  transform: skewY(-38deg);
+}
+
 .chat-widget {
   position: fixed;
   right: 22px;
@@ -992,6 +1056,11 @@ h3 {
     gap: 42px;
   }
 
+  .course-video-block {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
   .course-visual {
     width: min(680px, 100%);
   }
@@ -1076,6 +1145,15 @@ h3 {
     gap: 32px;
   }
 
+  .course-video-block {
+    margin-top: 60px;
+    padding-top: 52px;
+  }
+
+  .course-video-copy h3 {
+    font-size: 1.65rem;
+  }
+
   .course-visual figcaption {
     right: 10px;
     bottom: 10px;
@@ -1124,6 +1202,25 @@ h3 {
   .floating-chat-button {
     right: 14px;
     bottom: 14px;
+    display: grid;
+    width: 52px;
+    min-height: 52px;
+    place-items: center;
+    padding: 0;
+    border-radius: 50%;
+  }
+
+  .chat-button-icon {
+    margin-right: 0;
+  }
+
+  .floating-chat-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
   }
 
   .footer-inner {
