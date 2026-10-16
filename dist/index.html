@@ -23,6 +23,7 @@
         <span class="brand-copy">Movimiento Cecil Camacho</span>
       </a>
       <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#curso">Curso</a>
         <a href="#enfoque">Enfoque</a>
         <a href="#metodo">Método</a>
         <a href="#libros">Libros</a>
@@ -54,6 +55,47 @@
           <span>Enfoque</span>
           <span>Progreso</span>
           <span>Resultados</span>
+        </div>
+      </section>
+
+      <section class="course-section" id="curso">
+        <div class="section-inner course-grid">
+          <figure class="course-visual">
+            <img
+              src="assets/curso-pnl-reprogramar-mente.webp"
+              alt="Curso PNL para reprogramar tu mente con Cecil Camacho"
+              width="1254"
+              height="1254"
+            />
+            <figcaption>
+              <span>Curso online</span>
+              <strong>Con Cecil Camacho</strong>
+            </figcaption>
+          </figure>
+
+          <div class="course-copy">
+            <p class="eyebrow">Nuevo curso de PNL</p>
+            <h2>Reprograma tu mente y crea una nueva forma de avanzar.</h2>
+            <p class="course-intro">
+              Un recorrido práctico para reconocer patrones mentales, transformar tu diálogo
+              interno y usar herramientas de programación neurolingüística en tu vida diaria.
+            </p>
+            <ul class="course-benefits" aria-label="Lo que trabajarás en el curso">
+              <li>Identifica creencias que limitan tus decisiones.</li>
+              <li>Construye pensamientos alineados con tus objetivos.</li>
+              <li>Aplica recursos de PNL para impulsar cambios sostenibles.</li>
+            </ul>
+            <div class="course-action">
+              <a
+                class="button button-primary course-checkout hotmart-fb hotmart__button-checkout"
+                href="https://pay.hotmart.com/H108023409H?checkoutMode=2"
+                onclick="return false;"
+              >
+                Inscribirme al curso
+              </a>
+              <span>Compra segura procesada por Hotmart</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -296,5 +338,20 @@
     </dialog>
 
     <script src="script.js"></script>
+    <script>
+      function importHotmart() {
+        const imported = document.createElement("script");
+        imported.src = "https://static.hotmart.com/checkout/widget.min.js";
+        document.head.appendChild(imported);
+
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.type = "text/css";
+        link.href = "https://static.hotmart.com/css/hotmart-fb.min.css";
+        document.head.appendChild(link);
+      }
+
+      importHotmart();
+    </script>
   </body>
 </html>
