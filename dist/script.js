@@ -164,6 +164,12 @@ document.querySelectorAll("[data-gallery]").forEach((button) => {
 
 document.querySelector("[data-close-modal]").addEventListener("click", () => modal.close());
 
+document.querySelectorAll("[data-course-checkout]").forEach((button) => {
+  button.addEventListener("click", () => {
+    window.open("https://pay.hotmart.com/H108023409H?checkoutMode=2", "_blank", "noopener,noreferrer");
+  });
+});
+
 modal.addEventListener("click", (event) => {
   if (event.target === modal) modal.close();
 });
