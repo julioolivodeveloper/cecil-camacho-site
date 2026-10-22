@@ -325,6 +325,11 @@ h3 {
   align-items: center;
 }
 
+.course-visual-column {
+  display: grid;
+  gap: 18px;
+}
+
 .course-visual {
   position: relative;
   overflow: hidden;
@@ -491,6 +496,10 @@ h3 {
 }
 
 .button.course-video-checkout {
+  width: 100%;
+}
+
+.button.course-image-checkout {
   width: 100%;
 }
 
@@ -1070,7 +1079,7 @@ h3 {
     gap: 30px;
   }
 
-  .course-visual {
+  .course-visual-column {
     width: min(680px, 100%);
   }
 
